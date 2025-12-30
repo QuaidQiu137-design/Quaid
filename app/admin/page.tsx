@@ -9,8 +9,8 @@ interface Order {
 }
 
 export default async function AdminPage() {
-  // 1. 向自己的 API 请求数据
-  const res = await fetch('https://quaid-lovat.vercel.app/api/users', {
+// ✅ 正确代码：连接云端接口
+const res = await fetch('https://quaid-lovat.vercel.app/api/contact', {
     cache: 'no-store'
   });
   const orders: Order[] = await res.json();
