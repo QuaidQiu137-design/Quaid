@@ -15,7 +15,7 @@ export default async function Home() {
   // 3. 向我们刚才写的 API 发起请求
   // 注意：在服务器端组件里 fetch 必须写完整 URL
   // 真实上线时通常用 process.env.URL，这里简化处理直接写 localhost
-  const res = await fetch('http://localhost:3000/api/users', {
+  const res = await fetch('https://quaid-lovat.vercel.app/api/users', {
     cache: 'no-store' // 确保每次刷新都拿最新数据，不缓存
   });
   
