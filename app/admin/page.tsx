@@ -10,7 +10,7 @@ interface Order {
 
 export default async function AdminPage() {
   // 1. 向自己的 API 请求数据
-  const res = await fetch('http://localhost:3000/api/contact', {
+  const res = await fetch('https://quaid-lovat.vercel.app/api/users', {
     cache: 'no-store'
   });
   const orders: Order[] = await res.json();
